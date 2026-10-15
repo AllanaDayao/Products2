@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title> Products - Task 3 </title>
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-4.0.0.js"
+        integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        body {
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        #readData {
+            padding: 15px;
+        }
+
+        #readData:hover {
+            background-color: rgb(185, 191, 196);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .product {
+            padding: 15px;
+            max-width: 600px;
+
+        }
+
+        .product-name {
+            font-weight: bold;
+            font-size: 22px;
+            background-color: rgb(149, 211, 211);
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button id="readData">Load Products</button>
+    <div id="result"></div>
+
+    <script language="javascript">
+
+        window.onload = function () {
+            button = document.getElementById("readData");
+
+            // add event listener to button
+            button.addEventListener("click", function () {
+
+                $.get("products.json", function (data) {
+
+                    str = JSON.stringify(data); // data is a json object
+
+                    //  data is in a list
+                    str = "<ul>";
+                    data.forEach(function (product) {
+                        str += "<li class = 'product'>"
+                            + "<div class = 'product-name'>" + product.name + "</div>"
+                            + product.description + "<br>"
+                            + "Price: " + product.price + "<br>"
+                            + "Categories: " + product.categories.join(", ")
+                            + "</li>";
+
+                    });
+
+                    str += "</ul>";
+                    // displays all products inside result div
+                    document.getElementById("result").innerHTML = str;
+                });
+            });
+
+        };
+
+    </script>
+
+</body>
+
+</html>

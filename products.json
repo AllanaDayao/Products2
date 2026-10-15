@@ -1,0 +1,96 @@
+[
+    {
+        "name": "Leather Jacket",
+        "description": "Classic brown leather jacket with pocketss and zippers",
+        "price": "$80",
+        "categories": [
+            "Clothing",
+            "Outerwear"
+        ]
+    },
+    {
+        "name": "Skateboard",
+        "description": "New maple wood skateboard with graffiti designs",
+        "price": "$70",
+        "categories": [
+            "Sports",
+            "Outdoor",
+            "Recreation"
+        ]
+    },
+    {
+        "name": "Smart Watch",
+        "description": "Health and fitness tracking watch with phone call and texting capabilities",
+        "price": "$150",
+        "categories": [
+            "Electronics",
+            "Accessories"
+        ]
+    },
+    {
+        "name": "Laptop",
+        "description": "High performance windows laptop with long lasting battery life",
+        "price": "$900",
+        "categories": [
+            "Electronics",
+            "Office"
+        ]
+    },
+    {
+        "name": "Notebook",
+        "description": "Hard cover Lined journal for notes",
+        "price": "$10",
+        "categories": [
+            "Office",
+            "School",
+            "Stationery"
+        ]
+    },
+    {
+        "name": "Sunglasses",
+        "description": "Tinted fashion sunglases",
+        "price": "$15",
+        "categories": [
+            "Accessories",
+            "Clothing"
+        ]
+    },
+    {
+        "name": "Airfryer",
+        "description": "Fast, versatile, and oil free air fryer",
+        "price": "$80",
+        "categories": [
+            "Kitchen",
+            "Appliances",
+            "Home"
+        ]
+    },
+    {
+        "name": "Speaker",
+        "description": "Waterproof with adjustable audio settins and vibrant colors wireless speaker",
+        "price": "$50",
+        "categories": [
+            "Electronics",
+            "Audio"
+        ]
+    },
+    {
+        "name": "Sneakers",
+        "description": "Lifestyle shoes that are breathable and durable",
+        "price": "$75",
+        "categories": [
+            "Clothing",
+            "Footwear"
+        ]
+    },
+    {
+        "name": "Yoga Mat",
+        "description": "Eco-friendly, thick, and with excellent tractiion yoga mats",
+        "price": "$20",
+        "categories": [
+            "Fitness",
+            "Sports",
+            "Home"
+        ]
+    }
+]
